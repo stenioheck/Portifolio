@@ -1,0 +1,21 @@
+@media (min-width:768px) {
+    body.contrast,
+    body.contrast header,
+    body.contrast #main,
+    body.contrast footer {
+        background:none;
+        background-color:#000 !important;
+        color:#FFF !important;
+    }
+    body.contrast #main,
+    body.contrast header {
+        border-bottom: 1px solid #FFF;
+    }
+    }
+    body.contrast h1.block-title {color: #FFF}
+    body.contrast .box h2 {color: #000;}
+    body.contrast .box {background: #FFFF00;}
+    body.contrast .btn-primary {background: #000;border-color: #000;}
+    body.contrast header#main-header .logo .logo-image {
+        background-image: url(https://web.celepar.pr.gov.br/drupal/images/logo_parana_225x66_texto_branco.png) !important;
+    }

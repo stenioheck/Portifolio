@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Monitora_Dengue_Campo_Mourao</title>
+    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" media="all" href="https://web.celepar.pr.gov.br/drupal/css/gerais.css" />
+    <link rel="stylesheet" media="all" href="https://web.celepar.pr.gov.br/drupal/instbar/css/inst-bar.min.css" />
+    <link rel="shortcut icon" href="https://www.educacao.pr.gov.br/sites/detran/themes/custom/detran/favicom.ico" type="image/vnd.microsoft.icon" />  
+    <link rel="stylesheet" href="_assets/bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="_assets/fontawesome-free-5.0.7/css/fontawesome-all.min.css">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <link rel="stylesheet" media="screen" href="css/contrast.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="_assets/jquery-cookie/jquery.cookie.js"></script>
+    <script src="_assets/bootstrap-3.3.7/js/dropdown.js"></script>
+    <script src="https://web.celepar.pr.gov.br/drupal/instbar/js/inst-bar.js" async></script>
+  </head>
+  <body>
+      <!-- inst bar -->
+      <div id="inst-bar">
+        <div class="container">
+          <ul id="accessibility" class="pull-left">
+            <li class="opt-content"><a href="https://www.educacao.pr.gov.br/desvio.html#main-content" accesskey="1" title="Ir direto ao assunto principal - atalho nº1">Ir para o conteúdo</a></li>
+            <li class="opt-accessibility"><a href="https://www.pia.pr.gov.br/acessibilidade" accesskey="4" title="Sobre a acessibilidade - atalho nº4" class="0" target="_blank" rel="nofollow">Acessibilidade</a></li>
+            <li class="opt-icon opt-libras">
+              <a href="http://www.vlibras.gov.br" target="_blank" accesskey="9" title="Ir para o site vlibras - atalho nº9" class="0" rel="nofollow">
+                  <i class="icon icon-vlibras"></i>
+                  <span>Acessível em libras</span>
+              </a>
+            </li>
+
+          </ul>
+          <nav class="pull-right">
+            <a class="btn-acesso-info 0" href="http://www.transparencia.pr.gov.br/" target="_blank" rel="nofollow">Portal da Transparência</a>
+            <a class="btn-desaparecidos 0" href="http://www.desaparecidos.pr.gov.br/desaparecidos/index.do?action=index" target="_blank" rel="nofollow"><i class="fa fa-male" aria-hidden="true"></i> Pessoas Desaparecidas</a>
+
+          </nav>
+        </div>
+      </div> 
+      <!-- inst bar -->
+      <header id="main-header">
+        <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h1 class="logo pull-left">
+                <div class="logo-image"><span class="sr-only">SECRETARIA DA EDUCAÇÃO E DO ESPORTE</span></div>
+                <span class="nome-instituicao">Secretaria da Educação e do Esporte</span>
+              </h1>
+              <div class="img-pia pull-right">
+                <a href="https://www.pia.pr.gov.br/" target="_blank"><img class="color" src="https://web.celepar.pr.gov.br/drupal/images/pia_logo_142x47.png" title="Paraná Inteligência Artificial"></a>
+              </div>
+            </div>
+        </div>
+      </div>
+      </header>
+      <div>
+        <div class="w3-container">
+          <h2>Monitora Dengue Campo Mourão</h2>
+          <p>Site dedicado ao combate do mosquito da dengue no município de Campo Mourão.</p>
+        </div>
+        
+        <div class="w3-bar w3-blue-grey">
+          <button class="w3-bar-item w3-button" onclick="openTag('Cartilha')">Como previnir</button>
+          <button class="w3-bar-item w3-button" onclick= "openTag('Notícias')">Notícias (Jogo)</button>
+          <button class="w3-bar-item w3-button" onclick="openTag('Sobre')">Sobre o site</button>
+        </div>
+        
+        <div id="Cartilha" class="w3-container Tag">
+          <h2>Cartilha Ilustrada</h2>
+          <img src="images/cartilhaIlustrada.png"></img>
+          <p> Fonte:https://www.bradescoseguros.com.br/clientes/noticias/noticia/cartilha-mostra-como-combater-a-dengue</p>
+        </div>
+        
+        <div id="Notícias" class="w3-container Tag" style="display:none">
+          <h2>Jogo mata Aedes</h2>
+          <p>Acerte o mosquito da dengue com a raquete para ler as ultimas notícias do município sobre a dengue.</p> 
+             <div> 
+                </div onload= moveMosquito() id="canvas"> 
+                  <script src="jogo.js"> </script>  
+                
+                  <div id="canvas">
+                    <button onclick="startGame()">Inicar</button>
+                    <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">cima</button><br><br>
+                    <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">esquerda</button>
+                    <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">direita</button><br><br>
+                    <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">baixo</button>
+                  </div> 
+                  </div>
+        </div>
+        
+        <div id="Sobre" class="w3-container Tag" style="display:none">
+          <h2>Informações sobre o site</h2>
+          <p>Site desenvolvido pelo professor de pensamento computacional do Colégio Dom Bosco, Stênio Cristaldo Heck,
+             juntamente com o aluno 	João Vitor Blanc Dos Santos para o concurso Agrinho programação categoria 2.</p>
+             <img src="images/QRCodeLattesStenio.png" alt="QRCode" width="20%">
+             QRCode para acesso ao Currículo Lattes do Professor Stênio
+        </div>
+        
+        <script>
+        function openTag(TagName) {
+          var i;
+          var x = document.getElementsByClassName("Tag");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          document.getElementById(TagName).style.display = "block";  
+        }
+        </script>
+      </div>
+  </body>
+</html>
