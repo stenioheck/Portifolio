@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Lato:wght@900&family=Nerko+One&display=swap');
+:root {
+    --fonte-secundaria: 'Nerko One', cursive;
+    --fonte-primaria: 'La Belle Aurore', cursive;
+    --fonte-grande-rodape: 'Lato', sans-serif;
+    --fonte-pequena-rodape: 'Dosis', sans-serif;
+    --cor-principal:#121213;
+    --cor-cabecalho:#171717;
+    font-size: 20px;
+    background: #000000;
+}
